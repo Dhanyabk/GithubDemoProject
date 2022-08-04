@@ -1,0 +1,516 @@
+<html>
+<head>
+<title>TestNG:  NextGenAI Module</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>NextGenAI Module</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/3/7</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 04 13:08:46 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (292 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationHardDependency.launchApplication()'><b>launchApplication</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationHardDependency</td>
+<td><div><pre>java.lang.AssertionError: expected [Page Title] but found [Not Page Title]
+	at com.nextgenai.testngannotations.BankingApplicationHardDependency.launchApplication(BankingApplicationHardDependency.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1551945522", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1551945522'><pre>java.lang.AssertionError: expected [Page Title] but found [Not Page Title]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.nextgenai.testngannotations.BankingApplicationHardDependency.launchApplication(BankingApplicationHardDependency.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationSoftDependency.launchApplication()'><b>launchApplication</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationSoftDependency</td>
+<td><div><pre>java.lang.AssertionError: expected [Page Title] but found [Not Page Title]
+	at com.nextgenai.testngannotations.BankingApplicationSoftDependency.launchApplication(BankingApplicationSoftDependency.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace716487794", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace716487794'><pre>java.lang.AssertionError: expected [Page Title] but found [Not Page Title]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.nextgenai.testngannotations.BankingApplicationSoftDependency.launchApplication(BankingApplicationSoftDependency.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationAssertValidation.checkSavingAccountBalance()'><b>checkSavingAccountBalance</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationAssertValidation</td>
+<td><div><pre>java.lang.AssertionError: expected [Saving Account Balance] but found [Not Saving Account Balance]
+	at com.nextgenai.testngannotations.BankingApplicationAssertValidation.checkSavingAccountBalance(BankingApplicationAssertValidation.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1704491411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1704491411'><pre>java.lang.AssertionError: expected [Saving Account Balance] but found [Not Saving Account Balance]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.nextgenai.testngannotations.BankingApplicationAssertValidation.checkSavingAccountBalance(BankingApplicationAssertValidation.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationAssertValidation@bd4dc25</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nextgenai.testngannotations.RegisterDemo.lauchApplication()'><b>lauchApplication</b><br>Test class: com.nextgenai.testngannotations.RegisterDemo</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.RegisterDemo@4d02f94e</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationAssertValidation.loginUser()'><b>loginUser</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationAssertValidation</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationAssertValidation@bd4dc25</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationAssertValidation.checkCurrentAccountBalance()'><b>checkCurrentAccountBalance</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationAssertValidation</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationAssertValidation@bd4dc25</td></tr>
+<tr>
+<td title='com.nextgenai.beforeafterannotations.ScreenNavigation.navigateToMultipleWindows()'><b>navigateToMultipleWindows</b><br>Test class: com.nextgenai.beforeafterannotations.ScreenNavigation</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1</td></tr>
+<tr>
+<td title='com.nextgenai.beforeafterannotations.ScreenNavigation.navigateRequestDemoPage()'><b>navigateRequestDemoPage</b><br>Test class: com.nextgenai.beforeafterannotations.ScreenNavigation</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.RegisterDemo.closeApplication()'><b>closeApplication</b><br>Test class: com.nextgenai.testngannotations.RegisterDemo</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.RegisterDemo@4d02f94e</td></tr>
+<tr>
+<td title='com.nextgenai.beforeafterannotations.ScreenNavigationForClass.navigateToMultipleWindows()'><b>navigateToMultipleWindows</b><br>Test class: com.nextgenai.beforeafterannotations.ScreenNavigationForClass</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.beforeafterannotations.ScreenNavigationForClass@2c35e847</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationAssertValidation.launchApplication()'><b>launchApplication</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationAssertValidation</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationAssertValidation@bd4dc25</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationAssertValidation.closeApplication()'><b>closeApplication</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationAssertValidation</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationAssertValidation@bd4dc25</td></tr>
+<tr>
+<td title='com.nextgenai.beforeafterannotations.ScreenNavigationForClass.navigateToWebTable()'><b>navigateToWebTable</b><br>Test class: com.nextgenai.beforeafterannotations.ScreenNavigationForClass</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.beforeafterannotations.ScreenNavigationForClass@2c35e847</td></tr>
+<tr>
+<td title='com.nextgenai.beforeafterannotations.ScreenNavigation.navigateToAlertandPopup()'><b>navigateToAlertandPopup</b><br>Test class: com.nextgenai.beforeafterannotations.ScreenNavigation</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1</td></tr>
+<tr>
+<td title='com.nextgenai.beforeafterannotations.ScreenNavigationForClass.navigateToAlertandPopup()'><b>navigateToAlertandPopup</b><br>Test class: com.nextgenai.beforeafterannotations.ScreenNavigationForClass</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.beforeafterannotations.ScreenNavigationForClass@2c35e847</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.RegisterDemo.registerForDemo()'><b>registerForDemo</b><br>Test class: com.nextgenai.testngannotations.RegisterDemo</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.RegisterDemo@4d02f94e</td></tr>
+<tr>
+<td title='com.nextgenai.beforeafterannotations.ScreenNavigationForClass.navigateRequestDemoPage()'><b>navigateRequestDemoPage</b><br>Test class: com.nextgenai.beforeafterannotations.ScreenNavigationForClass</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.beforeafterannotations.ScreenNavigationForClass@2c35e847</td></tr>
+<tr>
+<td title='com.nextgenai.beforeafterannotations.ScreenNavigation.navigateToWebTable()'><b>navigateToWebTable</b><br>Test class: com.nextgenai.beforeafterannotations.ScreenNavigation</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.RegisterDemo.navigateToRegistrationForm()'><b>navigateToRegistrationForm</b><br>Test class: com.nextgenai.testngannotations.RegisterDemo</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.RegisterDemo@4d02f94e</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationSoftDependency.closeApplication()'><b>closeApplication</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationSoftDependency</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationAssertValidation.logout()'><b>logout</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationAssertValidation</td>
+<td></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationAssertValidation@bd4dc25</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationHardDependency.checkSavingAccountBalance()'><b>checkSavingAccountBalance</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationHardDependency</td>
+<td><div><pre>java.lang.Throwable: Method BankingApplicationHardDependency.checkSavingAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace93740343", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace93740343'><pre>java.lang.Throwable: Method BankingApplicationHardDependency.checkSavingAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationSoftDependency.checkSavingAccountBalance()'><b>checkSavingAccountBalance</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationSoftDependency</td>
+<td><div><pre>java.lang.Throwable: Method BankingApplicationSoftDependency.checkSavingAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2077742806", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2077742806'><pre>java.lang.Throwable: Method BankingApplicationSoftDependency.checkSavingAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationSoftDependency.checkCurrentAccountBalance()'><b>checkCurrentAccountBalance</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationSoftDependency</td>
+<td><div><pre>java.lang.Throwable: Method BankingApplicationSoftDependency.checkCurrentAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace597307515", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace597307515'><pre>java.lang.Throwable: Method BankingApplicationSoftDependency.checkCurrentAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationHardDependency.checkCurrentAccountBalance()'><b>checkCurrentAccountBalance</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationHardDependency</td>
+<td><div><pre>java.lang.Throwable: Method BankingApplicationHardDependency.checkCurrentAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1107412069", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1107412069'><pre>java.lang.Throwable: Method BankingApplicationHardDependency.checkCurrentAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationSoftDependency.loginUser()'><b>loginUser</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationSoftDependency</td>
+<td><div><pre>java.lang.Throwable: Method BankingApplicationSoftDependency.loginUser()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace246273275", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace246273275'><pre>java.lang.Throwable: Method BankingApplicationSoftDependency.loginUser()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationHardDependency.loginUser()'><b>loginUser</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationHardDependency</td>
+<td><div><pre>java.lang.Throwable: Method BankingApplicationHardDependency.loginUser()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace438589491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438589491'><pre>java.lang.Throwable: Method BankingApplicationHardDependency.loginUser()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e</td></tr>
+<tr>
+<td title='com.nextgenai.testngannotations.BankingApplicationHardDependency.closeApplication()'><b>closeApplication</b><br>Test class: com.nextgenai.testngannotations.BankingApplicationHardDependency</td>
+<td><div><pre>java.lang.Throwable: Method BankingApplicationHardDependency.closeApplication()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1823541245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1823541245'><pre>java.lang.Throwable: Method BankingApplicationHardDependency.closeApplication()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e</td></tr>
+</table><p>
+</body>
+</html>

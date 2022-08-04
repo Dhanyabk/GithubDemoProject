@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="NextGenAI Module(failed)">
+    <classes>
+      <class name="com.nextgenai.testngannotations.BankingApplicationAssertValidation">
+        <methods>
+          <include name="checkSavingAccountBalance"/>
+        </methods>
+      </class> <!-- com.nextgenai.testngannotations.BankingApplicationAssertValidation -->
+      <class name="com.nextgenai.testngannotations.BankingApplicationSoftDependency">
+        <methods>
+          <include name="loginUser"/>
+          <include name="checkSavingAccountBalance"/>
+          <include name="launchApplication"/>
+          <include name="checkCurrentAccountBalance"/>
+        </methods>
+      </class> <!-- com.nextgenai.testngannotations.BankingApplicationSoftDependency -->
+      <class name="com.nextgenai.testngannotations.BankingApplicationHardDependency">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="launchApplication"/>
+          <include name="checkCurrentAccountBalance"/>
+          <include name="loginUser"/>
+          <include name="checkSavingAccountBalance"/>
+        </methods>
+      </class> <!-- com.nextgenai.testngannotations.BankingApplicationHardDependency -->
+    </classes>
+  </test> <!-- NextGenAI Module(failed) -->
+</suite> <!-- Failed suite [Automation Suite] -->

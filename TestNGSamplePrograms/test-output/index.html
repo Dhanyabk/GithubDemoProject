@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Automation_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Automation Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Automation_Suite" class="navigator-link ">
+                    <span>F:\GithubSample\TestNGSamplePrograms\sanitysuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Automation_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Automation_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Automation_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Automation_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Automation_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Automation_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">28 methods, 3 failed,  7 skipped,  18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Automation_Suite" class="hide-methods failed suite-Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-Automation_Suite -->
+                      <a href="#" panel-name="suite-Automation_Suite" class="show-methods failed suite-Automation_Suite"> (show)</a> <!-- show-methods failed suite-Automation_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Automation_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationAssertValidation" class="method navigator-link" hash-for-method="checkSavingAccountBalance">checkSavingAccountBalance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationHardDependency" class="method navigator-link" hash-for-method="launchApplication">launchApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationSoftDependency" class="method navigator-link" hash-for-method="launchApplication">launchApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Automation_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Automation_Suite" class="hide-methods skipped suite-Automation_Suite"> (hide)</a> <!-- hide-methods skipped suite-Automation_Suite -->
+                      <a href="#" panel-name="suite-Automation_Suite" class="show-methods skipped suite-Automation_Suite"> (show)</a> <!-- show-methods skipped suite-Automation_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Automation_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationSoftDependency" class="method navigator-link" hash-for-method="checkCurrentAccountBalance">checkCurrentAccountBalance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationHardDependency" class="method navigator-link" hash-for-method="checkCurrentAccountBalance">checkCurrentAccountBalance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationHardDependency" class="method navigator-link" hash-for-method="checkSavingAccountBalance">checkSavingAccountBalance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationSoftDependency" class="method navigator-link" hash-for-method="checkSavingAccountBalance">checkSavingAccountBalance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationHardDependency" class="method navigator-link" hash-for-method="closeApplication">closeApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationSoftDependency" class="method navigator-link" hash-for-method="loginUser">loginUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationHardDependency" class="method navigator-link" hash-for-method="loginUser">loginUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Automation_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Automation_Suite" class="hide-methods passed suite-Automation_Suite"> (hide)</a> <!-- hide-methods passed suite-Automation_Suite -->
+                      <a href="#" panel-name="suite-Automation_Suite" class="show-methods passed suite-Automation_Suite"> (show)</a> <!-- show-methods passed suite-Automation_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Automation_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationAssertValidation" class="method navigator-link" hash-for-method="checkCurrentAccountBalance">checkCurrentAccountBalance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.RegisterDemo" class="method navigator-link" hash-for-method="closeApplication">closeApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationAssertValidation" class="method navigator-link" hash-for-method="closeApplication">closeApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationSoftDependency" class="method navigator-link" hash-for-method="closeApplication">closeApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.RegisterDemo" class="method navigator-link" hash-for-method="lauchApplication">lauchApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationAssertValidation" class="method navigator-link" hash-for-method="launchApplication">launchApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationAssertValidation" class="method navigator-link" hash-for-method="loginUser">loginUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.BankingApplicationAssertValidation" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.beforeafterannotations.ScreenNavigation" class="method navigator-link" hash-for-method="navigateRequestDemoPage">navigateRequestDemoPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.beforeafterannotations.ScreenNavigationForClass" class="method navigator-link" hash-for-method="navigateRequestDemoPage">navigateRequestDemoPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.beforeafterannotations.ScreenNavigation" class="method navigator-link" hash-for-method="navigateToAlertandPopup">navigateToAlertandPopup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.beforeafterannotations.ScreenNavigationForClass" class="method navigator-link" hash-for-method="navigateToAlertandPopup">navigateToAlertandPopup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.beforeafterannotations.ScreenNavigation" class="method navigator-link" hash-for-method="navigateToMultipleWindows">navigateToMultipleWindows</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.beforeafterannotations.ScreenNavigationForClass" class="method navigator-link" hash-for-method="navigateToMultipleWindows">navigateToMultipleWindows</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.RegisterDemo" class="method navigator-link" hash-for-method="navigateToRegistrationForm">navigateToRegistrationForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.beforeafterannotations.ScreenNavigationForClass" class="method navigator-link" hash-for-method="navigateToWebTable">navigateToWebTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.beforeafterannotations.ScreenNavigation" class="method navigator-link" hash-for-method="navigateToWebTable">navigateToWebTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Automation_Suite" title="com.nextgenai.testngannotations.RegisterDemo" class="method navigator-link" hash-for-method="registerForDemo">registerForDemo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Automation_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Automation_Suite" class="panel Automation_Suite">
+          <div class="suite-Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.nextgenai.testngannotations.BankingApplicationAssertValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkSavingAccountBalance">
+                  </a> <!-- checkSavingAccountBalance -->
+                  <span class="method-name">checkSavingAccountBalance</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Saving Account Balance] but found [Not Saving Account Balance]
+	at com.nextgenai.testngannotations.BankingApplicationAssertValidation.checkSavingAccountBalance(BankingApplicationAssertValidation.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Suite-class-failed -->
+          <div class="suite-Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.nextgenai.testngannotations.BankingApplicationSoftDependency</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchApplication">
+                  </a> <!-- launchApplication -->
+                  <span class="method-name">launchApplication</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Page Title] but found [Not Page Title]
+	at com.nextgenai.testngannotations.BankingApplicationSoftDependency.launchApplication(BankingApplicationSoftDependency.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Suite-class-failed -->
+          <div class="suite-Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.nextgenai.testngannotations.BankingApplicationHardDependency</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchApplication">
+                  </a> <!-- launchApplication -->
+                  <span class="method-name">launchApplication</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Page Title] but found [Not Page Title]
+	at com.nextgenai.testngannotations.BankingApplicationHardDependency.launchApplication(BankingApplicationHardDependency.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Suite-class-failed -->
+          <div class="suite-Automation_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.nextgenai.testngannotations.BankingApplicationSoftDependency</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCurrentAccountBalance">
+                  </a> <!-- checkCurrentAccountBalance -->
+                  <span class="method-name">checkCurrentAccountBalance</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BankingApplicationSoftDependency.checkCurrentAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkSavingAccountBalance">
+                  </a> <!-- checkSavingAccountBalance -->
+                  <span class="method-name">checkSavingAccountBalance</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BankingApplicationSoftDependency.checkSavingAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUser">
+                  </a> <!-- loginUser -->
+                  <span class="method-name">loginUser</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BankingApplicationSoftDependency.loginUser()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Suite-class-skipped -->
+          <div class="suite-Automation_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.nextgenai.testngannotations.BankingApplicationHardDependency</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCurrentAccountBalance">
+                  </a> <!-- checkCurrentAccountBalance -->
+                  <span class="method-name">checkCurrentAccountBalance</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BankingApplicationHardDependency.checkCurrentAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkSavingAccountBalance">
+                  </a> <!-- checkSavingAccountBalance -->
+                  <span class="method-name">checkSavingAccountBalance</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BankingApplicationHardDependency.checkSavingAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeApplication">
+                  </a> <!-- closeApplication -->
+                  <span class="method-name">closeApplication</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BankingApplicationHardDependency.closeApplication()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUser">
+                  </a> <!-- loginUser -->
+                  <span class="method-name">loginUser</span>
+                  <div class="stack-trace">java.lang.Throwable: Method BankingApplicationHardDependency.loginUser()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Suite-class-skipped -->
+          <div class="suite-Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nextgenai.testngannotations.RegisterDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeApplication">
+                  </a> <!-- closeApplication -->
+                  <span class="method-name">closeApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lauchApplication">
+                  </a> <!-- lauchApplication -->
+                  <span class="method-name">lauchApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToRegistrationForm">
+                  </a> <!-- navigateToRegistrationForm -->
+                  <span class="method-name">navigateToRegistrationForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerForDemo">
+                  </a> <!-- registerForDemo -->
+                  <span class="method-name">registerForDemo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Suite-class-passed -->
+          <div class="suite-Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nextgenai.testngannotations.BankingApplicationAssertValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCurrentAccountBalance">
+                  </a> <!-- checkCurrentAccountBalance -->
+                  <span class="method-name">checkCurrentAccountBalance</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeApplication">
+                  </a> <!-- closeApplication -->
+                  <span class="method-name">closeApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchApplication">
+                  </a> <!-- launchApplication -->
+                  <span class="method-name">launchApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUser">
+                  </a> <!-- loginUser -->
+                  <span class="method-name">loginUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logout">
+                  </a> <!-- logout -->
+                  <span class="method-name">logout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Suite-class-passed -->
+          <div class="suite-Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nextgenai.testngannotations.BankingApplicationSoftDependency</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeApplication">
+                  </a> <!-- closeApplication -->
+                  <span class="method-name">closeApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Suite-class-passed -->
+          <div class="suite-Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nextgenai.beforeafterannotations.ScreenNavigationForClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateRequestDemoPage">
+                  </a> <!-- navigateRequestDemoPage -->
+                  <span class="method-name">navigateRequestDemoPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToAlertandPopup">
+                  </a> <!-- navigateToAlertandPopup -->
+                  <span class="method-name">navigateToAlertandPopup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToMultipleWindows">
+                  </a> <!-- navigateToMultipleWindows -->
+                  <span class="method-name">navigateToMultipleWindows</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToWebTable">
+                  </a> <!-- navigateToWebTable -->
+                  <span class="method-name">navigateToWebTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Suite-class-passed -->
+          <div class="suite-Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nextgenai.beforeafterannotations.ScreenNavigation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateRequestDemoPage">
+                  </a> <!-- navigateRequestDemoPage -->
+                  <span class="method-name">navigateRequestDemoPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToAlertandPopup">
+                  </a> <!-- navigateToAlertandPopup -->
+                  <span class="method-name">navigateToAlertandPopup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToMultipleWindows">
+                  </a> <!-- navigateToMultipleWindows -->
+                  <span class="method-name">navigateToMultipleWindows</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToWebTable">
+                  </a> <!-- navigateToWebTable -->
+                  <span class="method-name">navigateToWebTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Suite-class-passed -->
+        </div> <!-- panel Automation_Suite -->
+        <div panel-name="test-xml-Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\GithubSample\TestNGSamplePrograms\sanitysuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Automation Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;NextGenAI Module&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.nextgenai.testngannotations.RegisterDemo&quot;/&gt;
+      &lt;class name=&quot;com.nextgenai.testngannotations.BankingApplicationAssertValidation&quot;/&gt;
+      &lt;class name=&quot;com.nextgenai.testngannotations.BankingApplicationHardDependency&quot;/&gt;
+      &lt;class name=&quot;com.nextgenai.testngannotations.BankingApplicationSoftDependency&quot;/&gt;
+      &lt;class name=&quot;com.nextgenai.beforeafterannotations.ScreenNavigation&quot;/&gt;
+      &lt;class name=&quot;com.nextgenai.beforeafterannotations.ScreenNavigationForClass&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NextGenAI Module --&gt;
+&lt;/suite&gt; &lt;!-- Automation Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">NextGenAI Module (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Automation_Suite');
+function tableData_Automation_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(28);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'lauchApplication')
+data.setCell(0, 2, 'com.nextgenai.testngannotations.RegisterDemo')
+data.setCell(0, 3, 12);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'closeApplication')
+data.setCell(1, 2, 'com.nextgenai.testngannotations.BankingApplicationSoftDependency')
+data.setCell(1, 3, 7);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'launchApplication')
+data.setCell(2, 2, 'com.nextgenai.testngannotations.BankingApplicationAssertValidation')
+data.setCell(2, 3, 6);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'closeApplication')
+data.setCell(3, 2, 'com.nextgenai.testngannotations.RegisterDemo')
+data.setCell(3, 3, 5);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'launchApplication')
+data.setCell(4, 2, 'com.nextgenai.testngannotations.BankingApplicationHardDependency')
+data.setCell(4, 3, 5);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'registerForDemo')
+data.setCell(5, 2, 'com.nextgenai.testngannotations.RegisterDemo')
+data.setCell(5, 3, 4);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'navigateToWebTable')
+data.setCell(6, 2, 'com.nextgenai.beforeafterannotations.ScreenNavigation')
+data.setCell(6, 3, 4);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'navigateToRegistrationForm')
+data.setCell(7, 2, 'com.nextgenai.testngannotations.RegisterDemo')
+data.setCell(7, 3, 4);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkSavingAccountBalance')
+data.setCell(8, 2, 'com.nextgenai.testngannotations.BankingApplicationAssertValidation')
+data.setCell(8, 3, 4);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'navigateRequestDemoPage')
+data.setCell(9, 2, 'com.nextgenai.beforeafterannotations.ScreenNavigation')
+data.setCell(9, 3, 3);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'navigateToAlertandPopup')
+data.setCell(10, 2, 'com.nextgenai.beforeafterannotations.ScreenNavigationForClass')
+data.setCell(10, 3, 3);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkCurrentAccountBalance')
+data.setCell(11, 2, 'com.nextgenai.testngannotations.BankingApplicationAssertValidation')
+data.setCell(11, 3, 2);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'navigateToMultipleWindows')
+data.setCell(12, 2, 'com.nextgenai.beforeafterannotations.ScreenNavigationForClass')
+data.setCell(12, 3, 2);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'navigateToWebTable')
+data.setCell(13, 2, 'com.nextgenai.beforeafterannotations.ScreenNavigationForClass')
+data.setCell(13, 3, 2);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'navigateToAlertandPopup')
+data.setCell(14, 2, 'com.nextgenai.beforeafterannotations.ScreenNavigation')
+data.setCell(14, 3, 2);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'navigateRequestDemoPage')
+data.setCell(15, 2, 'com.nextgenai.beforeafterannotations.ScreenNavigationForClass')
+data.setCell(15, 3, 2);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'launchApplication')
+data.setCell(16, 2, 'com.nextgenai.testngannotations.BankingApplicationSoftDependency')
+data.setCell(16, 3, 2);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'loginUser')
+data.setCell(17, 2, 'com.nextgenai.testngannotations.BankingApplicationAssertValidation')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'navigateToMultipleWindows')
+data.setCell(18, 2, 'com.nextgenai.beforeafterannotations.ScreenNavigation')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'closeApplication')
+data.setCell(19, 2, 'com.nextgenai.testngannotations.BankingApplicationAssertValidation')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'logout')
+data.setCell(20, 2, 'com.nextgenai.testngannotations.BankingApplicationAssertValidation')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'checkSavingAccountBalance')
+data.setCell(21, 2, 'com.nextgenai.testngannotations.BankingApplicationHardDependency')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'checkSavingAccountBalance')
+data.setCell(22, 2, 'com.nextgenai.testngannotations.BankingApplicationSoftDependency')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'checkCurrentAccountBalance')
+data.setCell(23, 2, 'com.nextgenai.testngannotations.BankingApplicationSoftDependency')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'checkCurrentAccountBalance')
+data.setCell(24, 2, 'com.nextgenai.testngannotations.BankingApplicationHardDependency')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'loginUser')
+data.setCell(25, 2, 'com.nextgenai.testngannotations.BankingApplicationSoftDependency')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'loginUser')
+data.setCell(26, 2, 'com.nextgenai.testngannotations.BankingApplicationHardDependency')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'closeApplication')
+data.setCell(27, 2, 'com.nextgenai.testngannotations.BankingApplicationHardDependency')
+data.setCell(27, 3, 0);
+window.suiteTableData['Automation_Suite']= { tableData: data, tableDiv: 'times-div-Automation_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 73 ms</span>
+              <div id="times-div-Automation_Suite">
+              </div> <!-- times-div-Automation_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Automation Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Automation_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nextgenai.testngannotations.RegisterDemo</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">lauchApplication</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">navigateToRegistrationForm</span>
+                <span class="method-start">25 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerForDemo</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nextgenai.testngannotations.BankingApplicationAssertValidation</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginUser</span>
+                <span class="method-start">68 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkSavingAccountBalance</span>
+                <span class="method-start">76 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkCurrentAccountBalance</span>
+                <span class="method-start">86 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logout</span>
+                <span class="method-start">91 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">96 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nextgenai.testngannotations.BankingApplicationHardDependency</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">103 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginUser</span>
+                <span class="method-start">120 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkSavingAccountBalance</span>
+                <span class="method-start">133 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkCurrentAccountBalance</span>
+                <span class="method-start">140 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">151 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nextgenai.testngannotations.BankingApplicationSoftDependency</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">153 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginUser</span>
+                <span class="method-start">159 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkSavingAccountBalance</span>
+                <span class="method-start">161 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkCurrentAccountBalance</span>
+                <span class="method-start">171 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">180 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nextgenai.beforeafterannotations.ScreenNavigation</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">196 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateRequestDemoPage</span>
+                <span class="method-start">201 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">206 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">208 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToAlertandPopup</span>
+                <span class="method-start">208 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">212 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">213 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToMultipleWindows</span>
+                <span class="method-start">214 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">216 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">217 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToWebTable</span>
+                <span class="method-start">217 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">226 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.nextgenai.beforeafterannotations.ScreenNavigationForClass</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">227 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">navigateRequestDemoPage</span>
+                <span class="method-start">228 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">navigateToAlertandPopup</span>
+                <span class="method-start">234 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">navigateToMultipleWindows</span>
+                <span class="method-start">239 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">navigateToWebTable</span>
+                <span class="method-start">243 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">247 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

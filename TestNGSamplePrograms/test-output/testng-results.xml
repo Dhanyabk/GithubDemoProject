@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="28" passed="18" failed="3" skipped="7">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-04T13:08:46 IST" name="Automation Suite" finished-at="2022-08-04T13:08:46 IST" duration-ms="292">
+    <groups>
+    </groups>
+    <test started-at="2022-08-04T13:08:46 IST" name="NextGenAI Module" finished-at="2022-08-04T13:08:46 IST" duration-ms="292">
+      <class name="com.nextgenai.testngannotations.BankingApplicationSoftDependency">
+        <test-method signature="launchApplication()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890]" started-at="2022-08-04T13:08:46 IST" name="launchApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Page Title] but found [Not Page Title]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Page Title] but found [Not Page Title]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.nextgenai.testngannotations.BankingApplicationSoftDependency.launchApplication(BankingApplicationSoftDependency.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginUser()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890]" started-at="2022-08-04T13:08:46 IST" name="loginUser" finished-at="2022-08-04T13:08:46 IST" depends-on-methods="com.nextgenai.testngannotations.BankingApplicationSoftDependency.launchApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BankingApplicationSoftDependency.loginUser()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BankingApplicationSoftDependency.loginUser()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUser -->
+        <test-method signature="checkSavingAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890]" started-at="2022-08-04T13:08:46 IST" name="checkSavingAccountBalance" finished-at="2022-08-04T13:08:46 IST" depends-on-methods="com.nextgenai.testngannotations.BankingApplicationSoftDependency.loginUser" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BankingApplicationSoftDependency.checkSavingAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BankingApplicationSoftDependency.checkSavingAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSavingAccountBalance -->
+        <test-method signature="checkCurrentAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890]" started-at="2022-08-04T13:08:46 IST" name="checkCurrentAccountBalance" finished-at="2022-08-04T13:08:46 IST" depends-on-methods="com.nextgenai.testngannotations.BankingApplicationSoftDependency.checkSavingAccountBalance" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BankingApplicationSoftDependency.checkCurrentAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BankingApplicationSoftDependency.checkCurrentAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCurrentAccountBalance -->
+        <test-method signature="closeApplication()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationSoftDependency@16610890]" started-at="2022-08-04T13:08:46 IST" name="closeApplication" finished-at="2022-08-04T13:08:46 IST" depends-on-methods="com.nextgenai.testngannotations.BankingApplicationSoftDependency.checkCurrentAccountBalance" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.nextgenai.testngannotations.BankingApplicationSoftDependency -->
+      <class name="com.nextgenai.beforeafterannotations.ScreenNavigation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1]" started-at="2022-08-04T13:08:46 IST" name="launchApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="navigateRequestDemoPage()[pri:1, instance:com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1]" started-at="2022-08-04T13:08:46 IST" name="navigateRequestDemoPage" finished-at="2022-08-04T13:08:46 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateRequestDemoPage -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1]" started-at="2022-08-04T13:08:46 IST" name="closeApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1]" started-at="2022-08-04T13:08:46 IST" name="launchApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="navigateToAlertandPopup()[pri:2, instance:com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1]" started-at="2022-08-04T13:08:46 IST" name="navigateToAlertandPopup" finished-at="2022-08-04T13:08:46 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAlertandPopup -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1]" started-at="2022-08-04T13:08:46 IST" name="closeApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1]" started-at="2022-08-04T13:08:46 IST" name="launchApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="navigateToMultipleWindows()[pri:3, instance:com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1]" started-at="2022-08-04T13:08:46 IST" name="navigateToMultipleWindows" finished-at="2022-08-04T13:08:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToMultipleWindows -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1]" started-at="2022-08-04T13:08:46 IST" name="closeApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1]" started-at="2022-08-04T13:08:46 IST" name="launchApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="navigateToWebTable()[pri:4, instance:com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1]" started-at="2022-08-04T13:08:46 IST" name="navigateToWebTable" finished-at="2022-08-04T13:08:46 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToWebTable -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.nextgenai.beforeafterannotations.ScreenNavigation@53fdffa1]" started-at="2022-08-04T13:08:46 IST" name="closeApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.nextgenai.beforeafterannotations.ScreenNavigation -->
+      <class name="com.nextgenai.testngannotations.RegisterDemo">
+        <test-method signature="lauchApplication()[pri:1, instance:com.nextgenai.testngannotations.RegisterDemo@4d02f94e]" started-at="2022-08-04T13:08:46 IST" name="lauchApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lauchApplication -->
+        <test-method signature="navigateToRegistrationForm()[pri:2, instance:com.nextgenai.testngannotations.RegisterDemo@4d02f94e]" started-at="2022-08-04T13:08:46 IST" name="navigateToRegistrationForm" finished-at="2022-08-04T13:08:46 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToRegistrationForm -->
+        <test-method signature="registerForDemo()[pri:3, instance:com.nextgenai.testngannotations.RegisterDemo@4d02f94e]" started-at="2022-08-04T13:08:46 IST" name="registerForDemo" finished-at="2022-08-04T13:08:46 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerForDemo -->
+        <test-method signature="closeApplication()[pri:4, instance:com.nextgenai.testngannotations.RegisterDemo@4d02f94e]" started-at="2022-08-04T13:08:46 IST" name="closeApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.nextgenai.testngannotations.RegisterDemo -->
+      <class name="com.nextgenai.beforeafterannotations.ScreenNavigationForClass">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.nextgenai.beforeafterannotations.ScreenNavigationForClass@2c35e847]" started-at="2022-08-04T13:08:46 IST" name="launchApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="navigateRequestDemoPage()[pri:1, instance:com.nextgenai.beforeafterannotations.ScreenNavigationForClass@2c35e847]" started-at="2022-08-04T13:08:46 IST" name="navigateRequestDemoPage" finished-at="2022-08-04T13:08:46 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateRequestDemoPage -->
+        <test-method signature="navigateToAlertandPopup()[pri:2, instance:com.nextgenai.beforeafterannotations.ScreenNavigationForClass@2c35e847]" started-at="2022-08-04T13:08:46 IST" name="navigateToAlertandPopup" finished-at="2022-08-04T13:08:46 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAlertandPopup -->
+        <test-method signature="navigateToMultipleWindows()[pri:3, instance:com.nextgenai.beforeafterannotations.ScreenNavigationForClass@2c35e847]" started-at="2022-08-04T13:08:46 IST" name="navigateToMultipleWindows" finished-at="2022-08-04T13:08:46 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToMultipleWindows -->
+        <test-method signature="navigateToWebTable()[pri:4, instance:com.nextgenai.beforeafterannotations.ScreenNavigationForClass@2c35e847]" started-at="2022-08-04T13:08:46 IST" name="navigateToWebTable" finished-at="2022-08-04T13:08:46 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToWebTable -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.nextgenai.beforeafterannotations.ScreenNavigationForClass@2c35e847]" started-at="2022-08-04T13:08:46 IST" name="closeApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.nextgenai.beforeafterannotations.ScreenNavigationForClass -->
+      <class name="com.nextgenai.testngannotations.BankingApplicationAssertValidation">
+        <test-method signature="launchApplication()[pri:1, instance:com.nextgenai.testngannotations.BankingApplicationAssertValidation@bd4dc25]" started-at="2022-08-04T13:08:46 IST" name="launchApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginUser()[pri:2, instance:com.nextgenai.testngannotations.BankingApplicationAssertValidation@bd4dc25]" started-at="2022-08-04T13:08:46 IST" name="loginUser" finished-at="2022-08-04T13:08:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUser -->
+        <test-method signature="checkSavingAccountBalance()[pri:3, instance:com.nextgenai.testngannotations.BankingApplicationAssertValidation@bd4dc25]" started-at="2022-08-04T13:08:46 IST" name="checkSavingAccountBalance" finished-at="2022-08-04T13:08:46 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Saving Account Balance] but found [Not Saving Account Balance]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Saving Account Balance] but found [Not Saving Account Balance]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.nextgenai.testngannotations.BankingApplicationAssertValidation.checkSavingAccountBalance(BankingApplicationAssertValidation.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSavingAccountBalance -->
+        <test-method signature="checkCurrentAccountBalance()[pri:4, instance:com.nextgenai.testngannotations.BankingApplicationAssertValidation@bd4dc25]" started-at="2022-08-04T13:08:46 IST" name="checkCurrentAccountBalance" finished-at="2022-08-04T13:08:46 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCurrentAccountBalance -->
+        <test-method signature="logout()[pri:5, instance:com.nextgenai.testngannotations.BankingApplicationAssertValidation@bd4dc25]" started-at="2022-08-04T13:08:46 IST" name="logout" finished-at="2022-08-04T13:08:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="closeApplication()[pri:6, instance:com.nextgenai.testngannotations.BankingApplicationAssertValidation@bd4dc25]" started-at="2022-08-04T13:08:46 IST" name="closeApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.nextgenai.testngannotations.BankingApplicationAssertValidation -->
+      <class name="com.nextgenai.testngannotations.BankingApplicationHardDependency">
+        <test-method signature="launchApplication()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e]" started-at="2022-08-04T13:08:46 IST" name="launchApplication" finished-at="2022-08-04T13:08:46 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Page Title] but found [Not Page Title]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Page Title] but found [Not Page Title]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.nextgenai.testngannotations.BankingApplicationHardDependency.launchApplication(BankingApplicationHardDependency.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginUser()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e]" started-at="2022-08-04T13:08:46 IST" name="loginUser" finished-at="2022-08-04T13:08:46 IST" depends-on-methods="com.nextgenai.testngannotations.BankingApplicationHardDependency.launchApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BankingApplicationHardDependency.loginUser()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BankingApplicationHardDependency.loginUser()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUser -->
+        <test-method signature="checkSavingAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e]" started-at="2022-08-04T13:08:46 IST" name="checkSavingAccountBalance" finished-at="2022-08-04T13:08:46 IST" depends-on-methods="com.nextgenai.testngannotations.BankingApplicationHardDependency.loginUser" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BankingApplicationHardDependency.checkSavingAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BankingApplicationHardDependency.checkSavingAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSavingAccountBalance -->
+        <test-method signature="checkCurrentAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e]" started-at="2022-08-04T13:08:46 IST" name="checkCurrentAccountBalance" finished-at="2022-08-04T13:08:46 IST" depends-on-methods="com.nextgenai.testngannotations.BankingApplicationHardDependency.checkSavingAccountBalance" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BankingApplicationHardDependency.checkCurrentAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BankingApplicationHardDependency.checkCurrentAccountBalance()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCurrentAccountBalance -->
+        <test-method signature="closeApplication()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e]" started-at="2022-08-04T13:08:46 IST" name="closeApplication" finished-at="2022-08-04T13:08:46 IST" depends-on-methods="com.nextgenai.testngannotations.BankingApplicationHardDependency.checkCurrentAccountBalance" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method BankingApplicationHardDependency.closeApplication()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method BankingApplicationHardDependency.closeApplication()[pri:0, instance:com.nextgenai.testngannotations.BankingApplicationHardDependency@3bf9ce3e] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.nextgenai.testngannotations.BankingApplicationHardDependency -->
+    </test> <!-- NextGenAI Module -->
+  </suite> <!-- Automation Suite -->
+</testng-results>
